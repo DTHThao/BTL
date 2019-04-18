@@ -1,20 +1,22 @@
 package com.example.myzing.Model;
 
+import java.util.Date;
+
 public class Comment {
     private int id;
     private String contentComent;
-    private String timeComment;
+    private Date timeComment;
 
     public Comment() {
     }
 
-    public Comment(int id, String contentComent, String timeComment) {
+    public Comment(int id, String contentComent, Date timeComment) {
         this.id = id;
         this.contentComent = contentComent;
         this.timeComment = timeComment;
     }
 
-    public Comment(String contentComent, String timeComment) {
+    public Comment(String contentComent, Date timeComment) {
         this.contentComent = contentComent;
         this.timeComment = timeComment;
     }
@@ -35,11 +37,11 @@ public class Comment {
         this.contentComent = contentComent;
     }
 
-    public String getTimeComment() {
+    public Date getTimeComment() {
         return timeComment;
     }
 
-    public void setTimeComment(String timeComment) {
+    public void setTimeComment(Date timeComment) {
         this.timeComment = timeComment;
     }
 }
